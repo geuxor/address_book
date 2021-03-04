@@ -1,0 +1,9 @@
+#object {
+  color: red;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#object:hover {
+  background: yellow;
+}

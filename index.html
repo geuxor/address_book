@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Address Book</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1 class="m-4">Address Book</h1>
+
+    <div class="row col-12 col-sm-12 col-lg-12">
+
+      <div class="container col-12 col-sm-6 col-lg-6">
+
+          <div class="justify-content-center">
+            <form action="#" role="form">
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <input type="text" class="form-control form-control-sm" name="first_name" id="first_name" placeholder="First Name">
+                </div>
+                <div class="form-group col-6">
+                  <input type="text" class="form-control form-control-sm" name="last_name" id="last_name" placeholder="Last Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control form-control-sm" name="address" id="address" rows="2" placeholder="Address"></textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-6">
+                  <input type="text" class="form-control form-control-sm" name="zip_code" id="zip_code" placeholder="Zip Code">
+                  <div class="invalid-feedback">
+                    Please choose a zip-code between 4-7 digits.
+                  </div>
+                </div>
+                <div class="form-group col-6">
+                  <input type="text" class="form-control form-control-sm" name="city" id="city" placeholder="City">
+                  <div class="invalid-feedback">
+                    Please choose a city.
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control form-control-sm" name="country" id="country" placeholder="Country">
+                <div class="invalid-feedback">
+                  Please choose a country.
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control form-control-sm" name="email" id="email"  
+                  placeholder="Email Address">
+                <small id="emailHelp" class="form-text text-muted mx-2"></small>
+                <div class="invalid-feedback">
+                  Please choose a correct email in the correct format.
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control form-control-sm my-2" name="mobile_phone" id="mobile_phone"
+                  placeholder="Mobile phone number">
+                <div class="invalid-feedback">
+                  Please choose a correct phone number with between 8-20 digits.
+                </div>
+                <input type="text" class="form-control form-control-sm" name="home_phone" id="home_phone"
+                  placeholder="Home phone number">
+                <div class="invalid-feedback">
+                  Please choose a correct phone number with between 8-20 digits.
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-3">
+                    <label class="m-2" for="avatar">Avatar</label>
+                  </div>
+                  <div class="col-9">
+                    <input type="file" class="form-control-sm form-control-file" id="avatar">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input class="m-2" type="checkbox" name="favs" id="favs">Add to Favorites
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" disabled>
+                Please complete all fields
+              </button>
+            </form>
+          </div>
+
+      </div>
+      
+      <div class="container col-12 col-sm-6 col-lg-6">
+
+          <div id="addresslist" >
+            <div id="object">- Pepe Sanche - Mallorca St. 23 - Barcelona
+              <button id="delElement">Delete</button>
+            </div>
+
+          </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="main.js"></script>
+  </body>
+
+  </html>
