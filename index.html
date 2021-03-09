@@ -4,26 +4,30 @@
   <head>
     <title>Address Book</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="stylesheet" href="lib/style.css">
   </head>
 
   <body>
-    <h1 class="m-4">Address Book</h1>
-
+    <h1 class="mx-5 mt-4">Address Book</h1>
+    <p class="mx-5">by German Buus</p>
     <div class="row col-12 col-sm-12 col-lg-12">
 
-      <div class="container col-12 col-sm-6 col-lg-6">
+      <div class="container col-12 col-sm-4 col-lg-4">
 
           <div class="justify-content-center">
-            <form action="#" role="form">
+            <form action="#" id="ctcForm" role="form">
               <div class="form-row">
                 <div class="form-group col-6">
-                  <input type="text" class="form-control form-control-sm" name="first_name" id="first_name" placeholder="First Name">
+                  <input type="text" class="form-control form-control-sm" name="firstname" id="firstname" placeholder="First Name">
                 </div>
                 <div class="form-group col-6">
-                  <input type="text" class="form-control form-control-sm" name="last_name" id="last_name" placeholder="Last Name">
+                  <input type="text" class="form-control form-control-sm" name="lastname" id="lastname" placeholder="Last Name">
                 </div>
               </div>
               <div class="form-group">
@@ -31,7 +35,7 @@
               </div>
               <div class="form-row">
                 <div class="form-group col-6">
-                  <input type="text" class="form-control form-control-sm" name="zip_code" id="zip_code" placeholder="Zip Code">
+                  <input type="text" class="form-control form-control-sm" name="zipcode" id="zipcode" placeholder="Zip Code">
                   <div class="invalid-feedback">
                     Please choose a zip-code between 4-7 digits.
                   </div>
@@ -59,18 +63,13 @@
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control form-control-sm my-2" name="mobile_phone" id="mobile_phone"
+                <input type="text" class="form-control form-control-sm my-2" name="phone" id="phone"
                   placeholder="Mobile phone number">
                 <div class="invalid-feedback">
                   Please choose a correct phone number with between 8-20 digits.
                 </div>
-                <input type="text" class="form-control form-control-sm" name="home_phone" id="home_phone"
-                  placeholder="Home phone number">
-                <div class="invalid-feedback">
-                  Please choose a correct phone number with between 8-20 digits.
-                </div>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <div class="form-row">
                   <div class="col-3">
                     <label class="m-2" for="avatar">Avatar</label>
@@ -79,14 +78,14 @@
                     <input type="file" class="form-control-sm form-control-file" id="avatar">
                   </div>
                 </div>
-              </div>
-              <div class="form-group">
+              </div> -->
+              <!-- <div class="form-group">
                 <div class="checkbox">
                   <label>
                     <input class="m-2" type="checkbox" name="favs" id="favs">Add to Favorites
                   </label>
                 </div>
-              </div>
+              </div> -->
               <button type="submit" class="btn btn-primary" disabled>
                 Please complete all fields
               </button>
@@ -95,13 +94,12 @@
 
       </div>
       
-      <div class="container col-12 col-sm-6 col-lg-6">
+      <div class="container col-12 col-sm-8 col-lg-8">
 
-          <div id="addresslist" >
-            <div id="object">- Pepe Sanche - Mallorca St. 23 - Barcelona
-              <button id="delElement">Delete</button>
-            </div>
-
+          <div class="font-weight-bold" id="booklist" >
+            <!-- <div id="contact">- Pepe Sanche - Mallorca St. 23 - Barcelona
+              <a href="#" class="icons" id="delete"><i class="fas fa-trash"></i></a>
+            </div> -->
           </div>
 
       </div>

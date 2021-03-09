@@ -1,9 +1,37 @@
-#object {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #861657;
+    background-image: linear-gradient(326deg, #861657 0%, #FFA69F 74%);
+    background-attachment: fixed;
+}
+
+#contact {
+    color: red;
   margin: 5px;
   cursor: pointer;
 }
 
-#object:hover {
+.img-circle {
+  color: rgb(121, 194, 3);
+  margin: 15px;
   background: yellow;
+}
+
+#contact:hover {
+  background: yellow;
+}
+
+.img-circle:hover {
+  background: rgb(226, 42, 9);
+}
+
+
+.icons {
+  padding-left: 10px;
+}
+.fa-envelope, .fa-phone-alt {
+  color: rgb(228, 159, 10);
+  text-shadow: 2px 2px 8px rgba(240, 195, 73, 0.856);
 }

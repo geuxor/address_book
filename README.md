@@ -20,7 +20,7 @@ We want to validate the form as the user fills each input. The [`blur`](https://
 - Validate the phone number. **French mobile phones only**
 - If all fields have been completed correctly, enable the submit button
 
-Open the `lib/validation.js` file. This is where you'll code the validation logic.
+Open the `lib/abook.js` file. This is where you'll code the validation logic.
 
 ## Further suggestions
 

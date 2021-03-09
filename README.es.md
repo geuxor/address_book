@@ -20,7 +20,7 @@ Queremos validar el formulario al mismo tiempo que el usuario lo llena. El event
 - Valida el número de teléfono. **Solo números móviles franceses**
 - Si todos estos campos han sido completados correctamente, habilita el botón de enviar (submit).
 
-Abre el archivo `lib/validation.js`. Ahí es donde escribirás el código de validación.
+Abre el archivo `lib/abook.js`. Ahí es donde escribirás el código de validación.
 
 ## Sugerencias adicionales
 
